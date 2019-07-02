@@ -1,19 +1,40 @@
 {
   "name": "3recipies",
   "version": "1.0.0",
-  "description": "Recipie Progressive Web App",
+  "description": "Recipie App",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "react-scripts start"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hakeem1106/3Recipies.git"
   },
-  "author": "Gerald, Brittani, and Alvin",
+  "author": "Gerald, Brittani, Alvin",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/hakeem1106/3Recipies/issues"
   },
-  "homepage": "https://github.com/hakeem1106/3Recipies#readme"
+  "homepage": "https://github.com/hakeem1106/3Recipies#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^3.2.7",
+    "mongoose": "^5.6.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "^3.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
