@@ -1,6 +1,6 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
-class Recipies extends React.Component{
+class Recipes extends React.Component{
     constructor(props){
         super(props)
         this.state={
@@ -41,11 +41,11 @@ class Recipies extends React.Component{
             <div id="cookInput">
                 <form action="/" method="post" onSubmit={this.getNext}>
                     <div className="form-group">
-                    <input className="form-control" type="text" name="recipieName" placeholder="Recipie Name"></input>
+                    <input className="form-control" type="text" name="recipeName" placeholder="Recipe Name"></input>
                     <input className="form-control" type="text" name="chef" onChange={this.chefName}  placeholder="Chef"></input>
                     <input className="form-control"type="text" name="ingredients" placeholder="Ingredients"></input>
                     <input className="form-control"type="number" name="prepTime" placeholder="Prep Time"></input>
-                    <textarea className="form-control" placeholder={`Why do you love this recipie <Chef name will enter here when typed>${this.state.chef}?`}></textarea>
+                    <textarea className="form-control" placeholder={`Why do you love this recipe <Chef name will enter here when typed>${this.state.chef}?`}></textarea>
                     <div id="cookSteps">
                         {this.state.steps}
                     </div>
@@ -63,4 +63,4 @@ class Recipies extends React.Component{
 
 
 
-export default Recipies
+export default Recipes

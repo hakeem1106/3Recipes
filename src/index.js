@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Recipies from './components/Recipies'
+import Recipes from './components/Recipes'
 import '../src/style.css'
 
 
@@ -16,7 +16,7 @@ export default class Home extends React.Component{
     render(){
         return(
             <div id="home">
-                <Recipies />
+                <Recipes />
                 
             </div>
         )
