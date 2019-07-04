@@ -5,7 +5,8 @@ class Recipies extends React.Component{
         super(props)
         this.state={
             steps: [],
-            chef: ''
+            chef: '',
+        
             
         }
         this.getNext = this.getNext.bind(this)
@@ -27,7 +28,8 @@ class Recipies extends React.Component{
             steps:
                         <div id="steps">
                             <form>
-                            <textarea className="form-control" placeholder="Steps"></textarea>
+                            <textarea id="recipieSteps" className="form-control" placeholder="Steps"></textarea>
+                            <textarea id="recipieNotes" className="form-control" placeholder="Notes"></textarea>
                             </form>
                         </div>
         })
