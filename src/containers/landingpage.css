@@ -1,0 +1,17 @@
+body {
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    background-image: url('../images/landing-page-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+button {
+    margin-top: 5%;
+}
+
+.container {
+    padding-top: 20%;
+}
+
