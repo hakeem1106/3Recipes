@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { Component } from 'react';
+import '../containers/recipe.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-class Recipes extends React.Component{
+
+class Recipes extends Component{
     constructor(props){
         super(props)
         this.state={
@@ -14,7 +16,7 @@ class Recipes extends React.Component{
 
     }
 
-    chefName =(event)=>{
+    chefName=(event)=>{
         event.preventDefault()
         this.setState({
             chef: event.target.value
@@ -41,17 +43,18 @@ class Recipes extends React.Component{
             <div id="cookInput">
                 <form action="/" method="post" onSubmit={this.getNext}>
                     <div className="form-group">
-                    <input className="form-control" type="text" name="recipeName" placeholder="Recipe Name"></input>
-                    <input className="form-control" type="text" name="chef" onChange={this.chefName}  placeholder="Chef"></input>
-                    <input className="form-control"type="text" name="ingredients" placeholder="Ingredients"></input>
-                    <input className="form-control"type="number" name="prepTime" placeholder="Prep Time"></input>
+                    <input className="form-control" type="text" name="recipeName" placeholder="Recipe Name" required="true"></input>
+                    <input className="form-control" type="text" name="chef" onChange={this.chefName}  placeholder="Chef" required="true"></input>
+                    <input className="form-control" type="text" name="ingredients" placeholder="Ingredients" required="true"></input>
+                    <input className="form-control" type="number" min="0" name="prepTime" placeholder="Prep Time" required="true"></input>
                     <textarea className="form-control" placeholder={`Why do you love this recipe <Chef name will enter here when typed>${this.state.chef}?`}></textarea>
                     <div id="cookSteps">
                         {this.state.steps}
                     </div>
-                    <button className="btn btn-primary" type="submit">Next</button>
-                    Click next after entering why to expose steps box
-                    
+                    <div>
+                        <p>Click next after entering why to expose steps box</p>
+                        <button className="btn btn-primary" type="submit">Next</button>
+                    </div>
                     </div>
                    
                 </form>
@@ -60,7 +63,5 @@ class Recipes extends React.Component{
     }
     
 }
-
-
 
 export default Recipes
