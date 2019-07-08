@@ -1,17 +1,23 @@
-body {
+.background-container {
     font-family: 'Rubik', sans-serif;
     text-align: center;
-    background-image: url('../images/landing-page-background.jpg');
+    background-image: url('../images/landing-page-background-opacity50.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    overflow: hidden;
 }
 
-button {
+.landingpage-container {
+    padding-top: 20%;
+}
+
+.enter-button {
     margin-top: 5%;
 }
 
-.container {
-    padding-top: 20%;
+.enter-link, .enter-link:visited, .enter-link:hover{
+    color: whitesmoke;
+    text-decoration: none;
 }
 
