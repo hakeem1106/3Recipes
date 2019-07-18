@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../containers/recipe.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
+
 class Recipes extends Component{
     constructor(props){
         super(props)
