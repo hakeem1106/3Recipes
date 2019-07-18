@@ -1,32 +1,18 @@
-import React, { Component } from 'react'
+import React from 'react'
 import ReactDOM from 'react-dom'
-import Recipes from './components/Recipes'
-import Navigation from './components/Navigation'
-// import LandingPage from './components/LandingPage'
-import './containers/app.css'
-import 'bootstrap/dist/css/bootstrap.min.css'
+import { BrowserRouter, Switch, Route, withRouter } from 'react-router-dom'
+import LandingPage from './pages/LandingPage'
+import HomePage from './pages/HomePage';
+import NewRecipe from './pages/NewRecipe';
 
-export default class App extends Component{
-    constructor(props){
-        super(props)
-        this.state={
-            
-    }
-}
+const routing = (
+    <BrowserRouter>
+        <Switch>
+            <Route exact path="/" component={LandingPage} />
+            <Route exact path="/home" component={withRouter(HomePage)} />
+            <Route exact path="/addRecipe" component={withRouter(NewRecipe)} /> 
+        </Switch>
+    </BrowserRouter>
+)
 
-    render(){
-        return(
-            <div>
-            <Navigation />
-            <div class="d-flex justify-content-center">
-                <div id="home">
-                    <Recipes />
-                </div>
-            </div>   
-            </div>
-        )
-    }
-}
-
-
-ReactDOM.render(<App />, document.getElementById('root'))
+ReactDOM.render(routing, document.getElementById('root'))
