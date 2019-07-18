@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../containers/recipe.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import { Form, Button } from 'react-bootstrap'
 
 
 class Recipes extends Component{
@@ -30,35 +31,38 @@ class Recipes extends Component{
         this.setState({
             steps:
                         <div id="steps">
-                            <form>
-                            <textarea id="recipieSteps" className="form-control" placeholder="Steps"></textarea>
-                            <textarea id="recipieNotes" className="form-control" placeholder="Notes"></textarea>
-                            </form>
+                            <Form>
+                            <Form.Control id="recipieSteps" as="textarea" placeholder="Steps"></Form.Control>
+                            <Form.Control id="recipieNotes" as="textarea" placeholder="Notes"></Form.Control>
+                            </Form>
                         </div>
         })
+        console.log("clicked")
 
     }
 
     render(){
-        return(
-            <div id="cookInput">
-                <form action="/" method="post" onSubmit={this.getNext}>
-                    <div className="form-group">
-                    <input className="form-control" type="text" name="recipeName" placeholder="Recipe Name" required={true}></input>
-                    <input className="form-control" type="text" name="chef" onChange={this.chefName}  placeholder="Chef" required={true}></input>
-                    <input className="form-control" type="text" name="ingredients" placeholder="Ingredients" required={true}></input>
-                    <input className="form-control" type="number" min="0" name="prepTime" placeholder="Prep Time" required={true}></input>
-                    <textarea className="form-control" placeholder={`Why do you love this recipe <Chef name will enter here when typed>${this.state.chef}?`}></textarea>
+        return( 
+                <div>
+                <Form action="#" method="post" >
+                    <Form.Group>
+                    <Form.Control type="text" name="recipeName" placeholder="Recipe Name" required={true}></Form.Control>
+                    <Form.Control type="text" name="chef" onChange={this.chefName}  placeholder="Chef" required={true}></Form.Control>
+                    <Form.Control type="text" name="ingredients" placeholder="Ingredients" required={true}></Form.Control>
+                    <Form.Control type="number" min="0" name="prepTime" placeholder="Prep Time" required={true}></Form.Control>
+                    <Form.Control as="textarea" placeholder={`Why do you love this recipe <Chef name will enter here when typed>${this.state.chef}?`}></Form.Control>
+                    
                     <div id="cookSteps">
+                        
                         {this.state.steps}
                     </div>
                     <div>
                         <p>Click next after entering why to expose steps box</p>
-                        <button className="btn btn-primary" type="submit">Next</button>
+                        <Button onSubmit={this.getNext}>Next</Button>
                     </div>
-                    </div>
+                    </Form.Group>
                    
-                </form>
+                </Form>
             </div>
         )
     }
