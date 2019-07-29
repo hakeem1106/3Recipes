@@ -1,11 +1,12 @@
-body{
+body {
     background-color: tomato;
     text-align: center;
 }
 
-#home{
+#home {
     margin: 75px;
-    padding: 50px;
+    padding: 40px 30px;
     width: 50em;
     align-content: center; 
 }
+

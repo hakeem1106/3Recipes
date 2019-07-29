@@ -1,16 +1,16 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom'
-import { Navbar, Button, Nav, Form, FormControl } from 'react-bootstrap'
+import { Navbar, Button, Nav, NavbarBrand, Form, FormControl } from 'react-bootstrap'
 import '../containers/navigation.css'
 
 const Navigation = () => {
         return (
             <Navbar bg="light" expand="lg">
-                <Navbar.Brand>
+                <NavbarBrand>
                     <NavLink to="/home">
                         <img src="../images/brand.png" alt="logo"/>
                     </NavLink>
-                </Navbar.Brand>
+                </NavbarBrand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">

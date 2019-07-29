@@ -1,3 +1,7 @@
+.add-recipe-header {
+    margin-bottom: 15px;
+}
+
 .form-input-recipe-resize {
     margin: 5px;
 }
@@ -7,3 +11,4 @@
     margin: 5px;
     resize: none;
 }
+

@@ -37,6 +37,7 @@ class Recipes extends Component{
     render(){
         return( 
             <div>
+                <h2 className="add-recipe-header">Add New Recipe</h2>
                 <Form onSubmit={this.getNext}>
                     <FormGroup role="form">
                         <FormControl className="form-input-recipe" type="text" name="recipeName" placeholder="Recipe Name" required="true"></FormControl>
