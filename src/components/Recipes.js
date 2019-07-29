@@ -41,9 +41,9 @@ class Recipes extends Component{
                 <Form onSubmit={this.getNext}>
                     <FormGroup role="form">
                         <FormControl className="form-input-recipe" type="text" name="recipeName" placeholder="Recipe Name" required="true"></FormControl>
-                        <FormControl className="form-input-recipe" type="text" name="chef" onChange={this.chefName}  placeholder="Chef" required={true}></FormControl>
+                        <FormControl className="form-input-recipe" type="text" name="chef" onChange={this.chefName}  placeholder="Chef" required="true"></FormControl>
                         <FormControl className="form-input-recipe" type="text" name="ingredients" placeholder="Ingredients" required="true"></FormControl>
-                        <FormControl className="form-input-recipe" type="number" min="0" name="prepTime" placeholder="Prep Time" required={true}></FormControl>
+                        <FormControl className="form-input-recipe" type="number" min="0" name="prepTime" placeholder="Prep Time" required="true"></FormControl>
                         <FormControl className="form-input-recipe" as="textarea" placeholder={`Why do you love this recipe <Chef name will enter here when typed>${this.state.chef}?`}></FormControl>
                     
                     <div id="cookSteps">
