@@ -1,8 +1,7 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
-import { Button } from 'react-bootstrap'
+import React from 'react';
 import Navigation from '../components/Navigation';
-import '../containers/homepage.css'
+import '../containers/homepage.css';
+import AddRecipeButton from '../components/AddRecipeButton';
 
 const HomePage = () => {
     return (
@@ -10,9 +9,7 @@ const HomePage = () => {
             <Navigation />
                 <div className="container">
                     <h1 className="title">HomePage</h1>
-                        <Button variant="primary" size="lg" className="new-recipe-button">
-                            <NavLink to="/addRecipe" className="add-recipe-link">Add Recipe</NavLink>
-                        </Button>
+                        <AddRecipeButton />
                         <div className="placement-text">
                         <p>Lorem ipsum dolor amet put a bird on it artisan wayfarers master cleanse raw denim chicharrones. Flexitarian fam brooklyn celiac yuccie, tofu swag jean shorts ethical etsy marfa venmo. Stumptown vegan migas adaptogen PBR&B salvia. Portland single-origin coffee coloring book kickstarter ramps, jianbing butcher. Celiac godard salvia meggings wolf echo park iceland.</p>
 
