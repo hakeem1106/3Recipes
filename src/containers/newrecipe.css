@@ -4,15 +4,8 @@ body{
 }
 
 #home{
-    
     margin: 75px;
     padding: 50px;
     width: 50em;
-    align-content: center;
-    
-    
-}
-
-#cookInput .form-control{
-    margin: 5px;
+    align-content: center; 
 }
