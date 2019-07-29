@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
-import Recipes from '../components/Recipes'
-import Navigation from '../components/Navigation'
-import '../containers/newrecipe.css'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import { Card } from 'react-bootstrap'
+import React, { Component } from 'react';
+import Recipes from '../components/RecipeForm';
+import Navigation from '../components/Navigation';
+import '../containers/newrecipe.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Card } from 'react-bootstrap';
 
 export default class NewRecipe extends Component{
     constructor(props){
@@ -22,7 +22,6 @@ export default class NewRecipe extends Component{
                     <Card.Body>
                     <Recipes />
                     </Card.Body>
-                    
                 </Card>
             </div>   
             </div>

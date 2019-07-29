@@ -1,7 +1,7 @@
 import React from 'react';
-import '../containers/landingpage.css'
-import { Button } from 'react-bootstrap'
-import { NavLink } from 'react-router-dom'
+import '../containers/landingpage.css';
+import { Button } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 
 const LandingPage = () => {
     return (

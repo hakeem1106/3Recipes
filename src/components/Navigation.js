@@ -1,7 +1,7 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom'
-import { Navbar, Button, Nav, NavbarBrand, Form, FormControl } from 'react-bootstrap'
-import '../containers/navigation.css'
+import { NavLink } from 'react-router-dom';
+import { Navbar, Button, Nav, NavbarBrand, Form, FormControl } from 'react-bootstrap';
+import '../containers/navigation.css';
 
 const Navigation = () => {
         return (
@@ -15,7 +15,7 @@ const Navigation = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
                         <NavLink to="/home" className="nav-link">Home</NavLink>
-                        <NavLink className="nav-link">Recipes</NavLink>
+                        <NavLink to="/recipes" className="nav-link">Recipes</NavLink>
                         <NavLink className="nav-link">Blog</NavLink>
                     </Nav>
                     <Form inline>
