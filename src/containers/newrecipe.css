@@ -1,18 +1,12 @@
-body{
+body {
     background-color: tomato;
     text-align: center;
 }
 
-#home{
-    background-color: whitesmoke;
+#home {
     margin: 75px;
-    padding: 50px;
+    padding: 40px 30px;
     width: 50em;
-    align-content: center;
-    border-radius: 6px;
-    
+    align-content: center; 
 }
 
-#cookInput .form-control{
-    margin: 5px;
-}

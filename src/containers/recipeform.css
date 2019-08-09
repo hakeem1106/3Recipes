@@ -1,0 +1,14 @@
+.add-recipe-header {
+    margin-bottom: 15px;
+}
+
+.form-input-recipe-resize {
+    margin: 5px;
+}
+
+/*removes the user ability to resize the textarea*/
+.form-input-recipe {
+    margin: 5px;
+    resize: none;
+}
+

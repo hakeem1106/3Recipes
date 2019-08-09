@@ -1,25 +1,21 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom'
-import { Navbar } from 'react-bootstrap'
-import { Button } from 'react-bootstrap'
-import { Nav } from 'react-bootstrap'
-import { Form } from 'react-bootstrap'
-import { FormControl } from 'react-bootstrap'
-import '../containers/navigation.css'
+import { NavLink } from 'react-router-dom';
+import { Navbar, Button, Nav, NavbarBrand, Form, FormControl } from 'react-bootstrap';
+import '../containers/navigation.css';
 
 const Navigation = () => {
         return (
             <Navbar bg="light" expand="lg">
-                <Navbar.Brand>
+                <NavbarBrand>
                     <NavLink to="/home">
                         <img src="../images/brand.png" alt="logo"/>
                     </NavLink>
-                </Navbar.Brand>
+                </NavbarBrand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
                         <NavLink to="/home" className="nav-link">Home</NavLink>
-                        <NavLink className="nav-link">Recipes</NavLink>
+                        <NavLink to="/recipes" className="nav-link">Recipes</NavLink>
                         <NavLink className="nav-link">Blog</NavLink>
                     </Nav>
                     <Form inline>
