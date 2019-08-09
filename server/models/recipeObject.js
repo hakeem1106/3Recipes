@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const schema = mongoose.Schema
+const Schema = mongoose.Schema
 
 const recipe = new Schema({
     "recipeID" : {
@@ -27,3 +27,6 @@ const recipe = new Schema({
         type: String
     }
 })
+
+const recipes = mongoose.model('recipes', recipe)
+exports.recipes = recipes
