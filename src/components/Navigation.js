@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { Navbar, Button, Nav, NavbarBrand, Form, FormControl } from 'react-bootstrap';
+import logo from '../images/brand.png';
 import '../containers/navigation.css';
 
 const Navigation = () => {
@@ -8,7 +9,7 @@ const Navigation = () => {
             <Navbar bg="light" expand="lg">
                 <NavbarBrand>
                     <NavLink to="/home">
-                        <img src="../images/brand.png" alt="logo"/>
+                        <img src={logo} alt="logo"/>
                     </NavLink>
                 </NavbarBrand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -16,7 +17,7 @@ const Navigation = () => {
                     <Nav className="mr-auto">
                         <NavLink to="/home" className="nav-link">Home</NavLink>
                         <NavLink to="/recipes" className="nav-link">Recipes</NavLink>
-                        <NavLink className="nav-link">Blog</NavLink>
+                        <NavLink to="/blog" className="nav-link">Blog</NavLink>
                     </Nav>
                     <Form inline>
                         <FormControl type="text" placeholder="Search" className="mr-sm-2" />

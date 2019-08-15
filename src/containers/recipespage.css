@@ -1,10 +1,16 @@
+.recipe-page-background {
+    background-color: rgb(90, 162, 221);
+    overflow: hidden;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(3, auto);
 }
 
-footer {
+.add-recipe {
+    text-align: center;
     padding-bottom: 1%;
     margin-bottom: 2%;
 }

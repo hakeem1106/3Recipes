@@ -5,6 +5,7 @@ import LandingPage from './pages/LandingPage';
 import HomePage from './pages/HomePage';
 import NewRecipe from './pages/NewRecipe';
 import RecipesPage from './pages/RecipesPage';
+import BlogPage from './pages/BlogPage';
 
 const routing = (
     <BrowserRouter>
@@ -13,6 +14,7 @@ const routing = (
             <Route exact path="/home" component={withRouter(HomePage)} />
             <Route exact path="/addRecipe" component={withRouter(NewRecipe)} /> 
             <Route exact path="/recipes" component={withRouter(RecipesPage)} /> 
+            <Route exact path="/blog" component={withRouter(BlogPage)} /> 
         </Switch>
     </BrowserRouter>
 )

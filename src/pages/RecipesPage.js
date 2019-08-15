@@ -4,14 +4,17 @@ import RecipeCard from '../components/RecipeCard';
 import AddRecipeButton from '../components/AddRecipeButton';
 import '../containers/recipespage.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Footer from '../components/Footer';
 
 class RecipesPage extends Component {
 
     render() {
         return (
-            <div>
+            <div className="recipe-page-background">
                 <Navigation />
                 <div className="d-flex justify-content-center">
+                {/* Content is static at the moment but when implemented */}
+                {/* data will be pulled from database */}
                     <div className="grid-container">
                         <RecipeCard />
                         <RecipeCard />
@@ -22,10 +25,11 @@ class RecipesPage extends Component {
                     </div>
                 </div>
 
-                <footer>
+                <div className="add-recipe">
                     <h6>Like to add your own recipe?</h6>
                     <AddRecipeButton />
-                </footer>
+                </div>
+                <Footer />
             </div>
         )
     }

@@ -1,0 +1,15 @@
+
+.footer-container {
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 5px;
+    background-color: whitesmoke;
+}
+
+.footer-content p {
+    margin-bottom: 0;
+}
+
+.footer-content a {
+    margin-left: 10px;
+}
