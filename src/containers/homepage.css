@@ -1,33 +1,4 @@
-.page-background {
+.home-page-background {
     background-color: rgb(21, 65, 104);
-    overflow: hidden;
-}
-
-.container {
-    margin-top: 3%;
-    margin-bottom: 3%;
-    background-color: whitesmoke;
-    border-radius: 5px;
-    padding-top: 5%;
-    padding-bottom: 1%;
-}
-
-.title {
-    font-family: 'Raleway', sans-serif;
-    color: rgb(0, 0, 0);
-}
-
-.new-recipe-button {
-    margin-top: 5%;
-}
-
-.add-recipe-link, .add-recipe-link:visited, .add-recipe-link:hover {
-    color: whitesmoke;
-    text-decoration: none;
-}
-
-.placement-text {
-    padding-top: 50px;
-    font-size: 2em;
-    line-height: 2em;
+    text-align: center;
 }

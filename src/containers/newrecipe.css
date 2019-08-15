@@ -1,5 +1,6 @@
-body {
+.new-recipe-background {
     background-color: tomato;
+    height: 100vh;
     text-align: center;
 }
 
@@ -10,3 +11,8 @@ body {
     align-content: center; 
 }
 
+.new-recipe-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
