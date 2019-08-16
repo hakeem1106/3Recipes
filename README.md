@@ -2,7 +2,7 @@
 
 ![badge](https://img.shields.io/badge/Library-React-blue) ![badge](https://img.shields.io/badge/Code%20Style-Prettier-brightgreen) ![badge](https://img.shields.io/github/license/hakeem1106/3recipes) ![badge](https://img.shields.io/github/repo-size/hakeem1106/3recipes) ![badge](https://img.shields.io/npm/v/npm)
 
-A website to find your favorite recipes :spaghetti: 
+A website to find your favorite recipes.
 
 >This website is still a work in progress at the moment
 
