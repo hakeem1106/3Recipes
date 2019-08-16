@@ -16,7 +16,7 @@ export default class NewRecipe extends Component {
     return (
       <div className="new-recipe-background">
         <Navigation />
-        <div className="d-flex justify-content-center">
+        <div className="flex-container">
           <Card id="home">
             <Card.Body>
               <Recipes />

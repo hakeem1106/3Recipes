@@ -1,3 +1,7 @@
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
 .new-recipe-background {
     background-color: tomato;
     height: 100vh;
@@ -8,6 +12,7 @@
     margin: 75px;
     padding: 40px 30px;
     width: 50em;
+    min-width: 300px;
     align-content: center; 
 }
 
