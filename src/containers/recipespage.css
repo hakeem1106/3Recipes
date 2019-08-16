@@ -1,11 +1,14 @@
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+
 .recipe-page-background {
     background-color: rgb(90, 162, 221);
-    overflow: hidden;
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
+    display: grid; 
     grid-template-rows: repeat(3, auto);
 }
 
@@ -13,4 +16,22 @@
     text-align: center;
     padding-bottom: 1%;
     margin-bottom: 2%;
+}
+
+@media (min-width: 300px){
+    .grid-container {
+        grid-template-columns: repeat(1, auto);
+    }
+}
+
+@media (min-width: 576px) {
+    .grid-container {
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media (min-width: 768px){
+    .grid-container {
+        grid-template-columns: repeat(3, auto);
+    }
 }

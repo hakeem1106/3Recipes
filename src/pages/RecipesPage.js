@@ -12,7 +12,7 @@ class RecipesPage extends Component {
         return (
             <div className="recipe-page-background">
                 <Navigation />
-                <div className="d-flex justify-content-center">
+                <div className="flex-container">
                 {/* Content is static at the moment but when implemented */}
                 {/* data will be pulled from database */}
                     <div className="grid-container">
