@@ -14,4 +14,4 @@ A website to find your favorite recipes.
 2. 🔧 [Open a new pull request](https://github.com/hakeem1106/3recipes/compare)
 3. 🎉 Get your pull request approved.
 
-Or just [create an issue](https://github.com/fvcproductions/apprenticeships.me/issues/new/choose) - we appreciate your help! :smile:
+Or just [create an issue](https://github.com/hakeem1106/3recipes/issues/new/choose) - we appreciate your help! :smile:
