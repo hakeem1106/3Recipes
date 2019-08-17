@@ -8,7 +8,8 @@ const Footer = () => {
             <div className="footer-content">
             {/* other social media can be added here */}
             <h6>Leave us feedback on Github<a href="https://github.com/hakeem1106/3Recipes" target="_blank" rel="noopener noreferrer" title="3Recipes Github"><FaGitAlt size={32} color={"salmon"} /></a></h6>
-                <p>&copy; 2019 3Recipes <a href="#" title="site terms">Terms</a> <a href="#" title="site privacy">Privacy</a></p>
+                {/* Terms and Privacy links are placeholders */}
+                <p>&copy; 2019 3Recipes <a href="https://github.com/hakeem1106/3Recipes" title="site terms">Terms</a> <a href="https://github.com/hakeem1106/3Recipes" title="site privacy">Privacy</a></p>
             </div>
         </div>
     )

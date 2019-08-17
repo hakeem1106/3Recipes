@@ -12,6 +12,12 @@ const BlogPage = () => {
         {/* Blog posts are static at the moment, but would like to make the */}
         {/* information available to be input via form and posted to site */}
         <div className="blog-post">
+            <p className="date">August 17, 2019</p>
+            <p className="blog-post">Updated favicon to match the branding of the page. Finished setting up a modal for the recipes page that can be stylized later once the website becomes more dynamic. Working on layout for the HomePage.js currently.</p>
+            <p className="update-time">Last updated: 8:43AM EST</p>
+            <hr />
+        </div>
+        <div className="blog-post">
             <p className="date">August 15, 2019</p>
             <p className="blog-post">Updates include: adding this blog page, adding a footer   with links to the projects Github page, fixed the branding image and recipe images so that they are now showing, and removed styles from the homepage.js to the blogpage.js.</p>
             <p className="update-time">Last updated: 12:23PM EST</p>
