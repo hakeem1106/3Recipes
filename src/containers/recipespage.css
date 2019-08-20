@@ -18,6 +18,39 @@
     margin-bottom: 2%;
 }
 
+.modal-dialog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+    z-index: 2;
+    box-shadow: 0 0 10px rgb(0,0,0);
+    border-radius: 5px;
+    width: 300px;
+}
+
+.modal-header {
+    justify-content: center;
+}
+
+.modal-body h6 {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.modal-body p {
+    text-align: left;
+    margin-left: 50px;
+}
+
+.modal-footer {
+    justify-content: center;
+}
+
+.modal-footer button, .modal-footer button:hover {
+    background-color: rgb(0, 101, 168);
+}
+
 @media (min-width: 300px){
     .grid-container {
         grid-template-columns: repeat(1, auto);
