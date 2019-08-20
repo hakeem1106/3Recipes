@@ -7,7 +7,6 @@ import {
   ModalDialog,
   Button
 } from "react-bootstrap";
-import "../containers/view-recipe-modal.css";
 
 class ViewRecipeModal extends Component {
   onClose = e => {
